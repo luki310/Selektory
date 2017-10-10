@@ -5,3 +5,93 @@ body {
 .center {
     margin: auto;
 }
+.grid-system .row {
+    height: 100px;
+}
+
+/*  GRID SYSTEM - niedoskonały :)  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 0.25%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    // border-style: solid;
+    // border-color: red;
+}
+.grid:first-child { margin-left: 0; }
+
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+.grid-12 {
+    width: 100%;
+}
+.grid-11 {
+    width: 91.64%;
+}.grid-10 {
+    width: 83.29%;
+}
+.grid-9 {
+    width: 74.93%;
+}
+.grid-8 {
+    width: 66.58%;
+}
+.grid-7 {
+    width: 58.22%;
+}
+.grid-6 {
+    width: 49.87%;
+}
+.grid-5 {
+    width: 41.52%;
+}
+.grid-4 {
+    width: 33.16%;
+}
+.grid-3 {
+    width: 24.81%;
+}
+.grid-2 {
+    width: 16.45%;
+}
+.grid-1 {
+    width: 8.104%;
+}
+
+@media only screen and (max-width: 960px) {
+    .grid {  margin: 0.25% 0 0.25% 0%; }
+
+    .grid-12, .grid-11, .grid-10, .grid-9 {
+        width: 100%;
+    }
+    .grid-8, .grid-7, .grid-6 {
+        width: 50%;
+    }
+     .grid-5 .grid-4, {
+        width: 33.33333%;
+    }
+    .grid-3, .grid-2, .grid-1 {
+        width: 25%;
+    }
+
+}
+@media only screen and (max-width: 480px) {
+    .grid {  margin: 1% 0 1% 0%; }
+
+    .grid-3, .grid-2, .grid-1 {
+        width: 50%;
+    }
+    .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+    width: 100%;
+    }
+}
