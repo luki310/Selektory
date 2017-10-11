@@ -5,10 +5,20 @@ body {
 .center {
     margin: auto;
 }
-.grid-system .row {
-    height: 100px;
+.forms .form  {
+    margin-bottom: 100px;
 }
 
+article {
+    margin-top: 20px;
+}
+
+.grid-system .row, .grid-description .row, .form .row {
+    height: 100px;
+}
+.grid-system .row {
+    text-align: center;
+}
 /*  GRID SYSTEM - niedoskonały :)  */
 .section {
     clear: both;
