@@ -13,13 +13,18 @@ article {
     margin-top: 20px;
 }
 
+.border-on {
+    border-style: solid;
+    border-color: blue;
+}
+
+/*  GRID SYSTEM - niedoskonały :)  */
 .grid-system .row, .grid-description .row, .form .row {
     height: 100px;
 }
 .grid-system .row {
     text-align: center;
 }
-/*  GRID SYSTEM - niedoskonały :)  */
 .section {
     clear: both;
     padding: 0px;
